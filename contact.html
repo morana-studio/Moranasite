@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morana Studio - Professional services in design and architecture">
+    <meta name="author" content="Morana Studio">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <!-- icone favori-->
+    
+    <link rel="icon" type="image/png" href="MoranaStudio/image-svg/logomorana_black.svg" />
+     <!-- lien fa fa icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Contact</title>
+    <style>
+ 
+       
+        
+   
+        
+        /* Style du formulaire */
+        form {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+             color: white;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+  border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        
+        input[type=submit] {
+            
+                     color: white;
+  
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        input[type=submit]:hover {
+            background-color: transparent;
+            color: grey;
+        }
+        
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        /* Style du carrousel */
+        .carousel {
+            position: relative;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .carousel-images {
+        
+            padding: 3%;
+            position: relative;
+            height: 550px;
+            overflow: hidden;
+        }
+        
+        .carousel-images img {
+            padding-top: 5%;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: none;
+            border-radius: 4px;
+        }
+        
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 18px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+            
+        }
+        
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .prev {
+            left: 50px;
+        }
+        
+        .next {
+            
+            right: 20px;
+        }
+        
+        /* Responsivité */
+        @media (max-width: 768px) {
+            .col-sm-6 {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: transparent;">
+        <!-- Brand -->
+        <a class="navbar-logo" href="indexMorana.html">
+            <img id="logo" src="MoranaStudio/image-svg/logo-navbar-moranastudio.svg" alt="Morana Studio Logo">
+        </a>
+
+        <!-- Links -->
+        
+        <div class="padding-button">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Réalisation.html">Réalisation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                         
+                        <a class="nav-link-menu dropdown-item" href="Architecture_d'intrieur.html">Architecture d'intérieur</a>
+                        <a class="nav-link-menu dropdown-item" href="brand_design.html">Identité de marque</a>
+                        <a class="nav-link-menu dropdown-item" href="graphisme.html">Graphisme</a>
+                        <a class="nav-link-menu dropdown-item" href="mobilier.html">Mobilier sur mesure</a>
+                        <a class="nav-link-menu dropdown-item" href="web-designe.html">Web design</a> 
+                        <a class="nav-link-menu dropdown-item" href="services.html">detaile services</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+       <!-- <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lng
+                </a>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <a class="nav-link-menu dropdown-item" href="#">FR</a>
+                    <a class="nav-link-menu dropdown-item" href="#">EN</a>
+                    <a class="nav-link-menu dropdown-item" href="#">EP</a>
+                </div>
+            </li>
+        </ul> -->
+    </nav>
+
+      <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Horizontal line -->
+    <div class="line"></div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            
+            
+            
+            <!-- Formulaire de Contact -->
+            <div class="col-sm-6">
+                <h1 class="titre">Nous Contacter</h1>
+                <form id="contactForm" action="https://formsubmit.co/f/xbjnrrvj" method="POST">
+                    <label class="p" for="fname">Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre prénom..." required>
+
+                    <label class="p" for="lname">Nom</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Votre nom..." required>
+
+                    <label class="p" for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Votre email..." required>
+
+                    <label class="p" for="country">Pays</label>
+                    <select id="country" name="country" required>
+                        <option value="">Sélectionnez votre pays</option>
+                        <option value="france">France</option>
+                        <option value="belgique">Angleterre</option>
+                        <option value="suisse">Espagne</option>
+                        <option value="canada"></option>
+                        <option value="autre">Autre</option>
+                    </select>
+
+                    <label class="p" for="subject">Message</label>
+                    <textarea id="subject" name="message" placeholder="Écrivez votre message ici..." style="height:200px" required></textarea>
+
+                    <!-- Champ caché pour l'adresse email de destination -->
+                    <input type="hidden" name="_replyto" value="moranastudio.contact@gmail.com">
+                    
+                    <!-- Redirection après soumission -->
+                    <input type="hidden" name="_next" value="https://votresite.com/merci.html">
+                    
+                    <!-- Protection contre les spambots -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <input type="submit" value="Envoyer">
+                </form>
+
+                <div id="responseMessage" class="message"></div>
+            </div>
+            
+            <!-- Carousel -->
+            <div class="col-sm-6">
+                <h1 class="titre">Dernières réalisations</h1>
+                <div class="carousel">
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <!-- Remplacez les chemins d'accès par vos propres images -->
+                        <img src="photos/Mobilier/Koch/Koch%204.jpg" alt="Réalisation 1">
+                        <img src="photos/Mobilier/koch/Koch%203.jpg" alt="Réalisation 2">
+                        <img src="photos/Mobilier/Kuleta/Kuleta1-1.jpg" alt="Réalisation 3">
+                        <img src="photos/Mobilier/Kuleta/Kuleta1-3.jpg" alt="Réalisation 4">
+                    </div>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script pour le carrousel -->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = totalImages - 1;
+            if (currentIndex >= totalImages) currentIndex = 0;
+
+            // Masquer toutes les images et afficher celle qui est active
+            images.forEach((img, index) => {
+                img.style.display = index === currentIndex ? 'block' : 'none';
+            });
+        }
+
+        // Initialiser le carrousel pour afficher la première image
+        changeImage(0);
+
+        // Défilement automatique toutes les 3 secondes
+        setInterval(() => {
+            changeImage(1); // Change l'image suivante automatiquement
+        }, 3000); // 3000 ms = 3 secondes
+    </script>
+
+    <!-- Script pour le formulaire -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Empêche l'envoi classique du formulaire
+            
+            const form = this;
+            const responseMessage = document.getElementById('responseMessage');
+            
+            // Afficher un message de chargement
+            responseMessage.textContent = 'Envoi en cours...';
+            responseMessage.style.color = '#333';
+            
+            // Envoi des données via fetch
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Erreur réseau');
+            })
+            .then(data => {
+                // Succès - afficher un message et réinitialiser le formulaire
+                responseMessage.textContent = 'Votre message a été envoyé avec succès!';
+                responseMessage.style.color = 'green';
+                form.reset();
+            })
+            .catch(error => {
+                // Erreur - afficher un message d'erreur
+                console.error('Erreur:', error);
+                responseMessage.textContent = 'Une erreur est survenue! Veuillez réessayer.';
+                responseMessage.style.color = 'red';
+            });
+        });
+    </script>
+
+    <!-- Inclure les scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <br>
+    <div class="line"></div>
+    <br>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+<div id=box_footer>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+ <div id="box_aa">
+<div class="container">
+    <div id="none">
+       <div id="box_b"> 
+  <div class="row">
+      <div class="col-sm-3">
+          <div id="padding-logo-footer"></div>
+          <img class="logo-footer" src="MoranaStudio/image-svg/logo_moranastudio_withe.svg">
+    </div>
+      <!-- lien reseau socio -->
+        <div class="col-sm-4">
+      <div id="none">
+       <ul class="no-bullets-footer">
+         <ul class="list-unstyled">
+             <li>Condition générale</li>
+             <li class="mention-link">
+           <a class="condition" href="mention-l%C3%A9gal.html">Mention légal</a>
+             </li>
+     <li class="mention-link">
+         <a class="condition" href="condition-de-service.html"><p>Condition de service </p></a>
+             </li>
+
+           
+          
+         
+        </ul>
+      </ul>
+    </div>
+    </div>
+      
+      <!-- lien mention légale et condition d'achat -->
+         <div class="col-sm-4">
+      <div id="none">
+       <ul class="no-bullets-footer">
+         <ul class="list-unstyled">
+             <li>Nous suivre:</li>
+              <li class="a-link">
+            <a href="https://www.linkedin.com/company/morana-studio/about/?viewAsMember=true"><i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+          </li>
+           <li>
+          </li>
+          <li>
+            <a href="https://fr.pinterest.com/moranastudiodesign/"><i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+          </li>
+          <li class="a-link">
+            <a href="https://www.instagram.com/morana__studio"><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    </div>
+      
+  </div>
+</div>
+    </div>
+     </div>
+    </div>
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <!-- Links -->
+        <h5 class="text-uppercase"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+             <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="footer-copyright text-center py-3"> <a href="https://github.com/morana"><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2025 Morana studio, tout droit réservés.
+  </div>
+  </div>
+</footer>
+<!-- Footer -->
+    
+    
+     <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

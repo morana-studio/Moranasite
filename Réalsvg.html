@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Css perso -->
+        <link rel="stylesheet" href="style.css" media="all" type="text/css">
+  <link rel="stylesheet" href="style-galery.css" media="all" type="text/css">
+
+    <!-- icone favori-->
+   <link rel="icon" type="image/png" href="MoranaStudio/image-svg/logomorana_black.svg" />
+     <!-- lien fa fa icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link font perso-->
+    <link href="font/Supreme%2520LL/SupremeLL-Regular.otf" rel="stylesheet">
+    <link href="font/Quicksand/static/Quicksand-Regular.ttf" rel="stylesheet">
+    <!-- link font google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    <title>Réalistions</title>
+    <style>
+        div.content {
+            margin: 5px;
+            padding: 10px;
+            background-color: transparent;
+            border: none ;
+        }
+        .hidden {
+            display: none;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px;
+            background-color: transparent;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        button.active {
+            background-color: #a0c7e7;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar header -->
+     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: transparent;">
+        <!-- Brand -->
+        <a class="navbar-logo" href="indexMorana.html">
+            <img id="logo" src="MoranaStudio/image-svg/logo-navbar-moranastudio.svg" alt="Morana Studio Logo">
+        </a>
+
+        <!-- Links -->
+        
+        <div class="padding-button">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Réalisation.html">Réalisation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                         
+                        <a class="nav-link-menu dropdown-item" href="Architecture_d'intrieur.html">Architecture d'intérieur</a>
+                        <a class="nav-link-menu dropdown-item" href="brand_design.html">Identité de marque</a>
+                        <a class="nav-link-menu dropdown-item" href="graphisme.html">Graphisme</a>
+                        <a class="nav-link-menu dropdown-item" href="mobilier.html">Mobilier sur mesure</a>
+                        <a class="nav-link-menu dropdown-item" href="web-designe.html">Web design</a> 
+                        <a class="nav-link-menu dropdown-item" href="services.html">detaile services</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lng
+                </a>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <a class="nav-link-menu dropdown-item" href="#">FR</a>
+                    <a class="nav-link-menu dropdown-item" href="#">EN</a>
+                    <a class="nav-link-menu dropdown-item" href="#">EP</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+      <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="line"></div>
+    <br>
+    
+  
+<!-- navbar boite réalisation -->    
+      <div id="box_aa">
+  <div class="container">
+    <div id="box_bb">
+      <div id="box_b">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="center">
+            <ul class="no-bullets service-list">
+ <li class="padding-service" id="btn1" onclick="toggleDivs(1)" >Architecture d'intérieur</li>
+  <li class="padding-service" id="btn2" onclick="toggleDivs(2)" >Identité visuel</li>
+  <li class="padding-service" id="btn3" onclick="toggleDivs(3)" >Graphisme</li>
+  <li class="padding-service" id="btn4" onclick="toggleDivs(4)">Mobilier sur mesure</li>
+  <li class="padding-service" id="btn5" onclick="toggleDivs(5)" >Web Design</li>
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    <!-- boite de dialogue dans la quelle s'affiche l'image -->
+    <div id="modal" class="modal">
+  <span class="close" id="closeModal">&times;</span>
+  <img id="modalImg" class="modal-content" />
+  <div id="caption"></div>
+</div>
+    
+    <!--Gestion des Divs-->
+    <!-- div Archi d'inter -->
+ 
+    <div id="div1" class="content">
+       
+        <div id="box_aa">
+         
+  <div class="container">
+      <h1 class="titre">Architecture d'intérieur</h1>
+    <div class="yellow-line"></div>
+      <br>
+    <h2 class="titre">P1</h2>
+    <div class="yellow-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_yellow">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+       <div class="container">
+    <h1 class="titre">projet2</h1>
+    <div class="yellow-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_yellow">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>     
+</div>
+        </div>
+        <br>
+       
+  
+    <!-- div identité de marque  -->
+    <div id="div2" class="content">
+        <div id="box_aa">
+  <div class="container">
+    <h1 class="titre">Identité visuelle</h1>
+    <div class="green-line"></div>
+      <br>
+      <h2 class="titre">P1</h2>
+      <div class="green-line"></div>
+    <br>
+      
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_green">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+     
+      
+      <h2 class="titre">P2</h2>
+      <div class="green-line"></div>
+    <br>
+      
+          <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_green">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+    </div>
+   
+    <!-- div Graphisme -->
+    <div id="div3" class="content">
+    <div id="box_aa">
+  <div class="container">
+      
+         <h1 class="titre">Graphisme</h1>
+    <div class="pink-line"></div>
+      <br>
+    <h2 class="titre">p1</h2>
+    <div class="pink-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_pink">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+    </div>
+        
+    <!-- div mobilier  -->
+    <div id="div4" class="content">
+    <div id="box_aa">
+  <div class="container">
+         <h1 class="titre"> Mobilier sur mersure</h1>
+    <div class="orange-line"></div>
+      <br>
+    <h2 class="titre"> Kuleta</h2>
+    <div class="orange-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_orange">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-1.jpg" alt="Image verticale 1" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-2.jpg" alt="Image horizontale 1" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-2.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-3.jpg" alt="Image verticale 2" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-3.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-4.jpg" alt="Image horizontale 2" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-4.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-5.jpg" alt="Image verticale 3" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Kuleta/Kuleta1-6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="photos/Mobilier/Kuleta/Kuleta1-6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            réaliasation du bibliothec en angle sous mansade
+          </p>
+        </div>
+      </div>
+    </div>
+      
+         <br>
+    <h2 class="titre"> koch</h2>
+    <div class="orange-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_orange">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="photos/Mobilier/Koch/Koch%201.jpg" alt="Image verticale 1" class="gallery-img" data-full="photos/Mobilier/Koch/Koch%201.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Koch/Koch%202.jpg" alt="Image horizontale 1" class="gallery-img" data-full="photos/Mobilier/Koch/Koch%202.jpg">
+              </div>
+             <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Koch/Koch%201.jpg" alt="Image horizontale 1" class="gallery-img" data-full="photos/Mobilier/Koch/Koch%201.jpg">
+              </div>
+                <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Koch/Koch%203.jpg" alt="Image horizontale 1" class="gallery-img" data-full="photos/Mobilier/Koch/Koch%203.jpg">
+              </div>
+                <div class="gallery-item horizontal">
+                <img src="photos/Mobilier/Koch/Koch%204.jpg" alt="Image horizontale 1" class="gallery-img" data-full="photos/Mobilier/Koch/Koch%204.jpg">
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Réalisation dun meuble télé bibliotheque
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+    </div>
+        
+    <!-- div web design -->
+    <div id="div5" class="content">
+    <div id="box_aa">
+  <div class="container">
+         <h1 class="titre">Web design</h1>
+    <div class="purple-line"></div>
+      <br>
+<h2 class="titre">P1</h2>
+    <div class="purple-line"></div>
+    <br>
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-8">
+        <div id="box_purple">
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/100.jpg" alt="Image horizontale 1" class="gallery-img" data-full="MoranaStudio/pose_cuisine/100.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="MoranaStudio/pose_cuisine/12.jpg" alt="Image verticale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/12.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="MoranaStudio/pose_cuisine/1.jpg" alt="Image horizontale 2" class="gallery-img" data-full="MoranaStudio/pose_cuisine/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="image5.jpg" alt="Image verticale 3" class="gallery-img" data-full="image5.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+                <img src="image6.jpg" alt="Image horizontale 3" class="gallery-img" data-full="image6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section description de la collaboration -->
+      <div class="col-sm-4">
+        <div id="none">
+          <p class="p-colab">
+            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier, et Juana, Architecte DE et designer d’espace. Après une expérience professionnelle commune, nous avons décidé d’unir nos compétences et de mettre notre expertise et savoir-faire au service d’un objectif commun : créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d’une expérience humaine de confiance, tout au long du projet.
+            <br><br>
+            Ce qui fait notre force, c’est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l’une et l’expertise technique de l’autre s’allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+    </div>
+    
+
+    
+    <br>
+    <div id="box_aa">
+  <div class="container">
+  
+        <div class="row">
+          <div class="col-sm-12">
+      
+            <div id="center">
+                          <div id="box_bb">
+      <div id="box_b">
+            <ul class="no-bullets service-list">
+ <li class="padding-service" id="btnAll" onclick="showAllDivs()" >Afficher tous</li>
+  
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     
+    
+      <br>
+    
+    
+<div class="line"></div>
+           <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+<div id=box_footer>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+ <div id="box_aa">
+<div class="container">
+    <div id="none">
+       <div id="box_b"> 
+  <div class="row">
+      <div class="col-sm-3">
+          <div id="padding-logo-footer"></div>
+          <img class="logo-footer" src="MoranaStudio/image-svg/logo_moranastudio_withe.svg">
+    </div>
+      <!-- lien reseau socio -->
+        <div class="col-sm-4">
+      <div id="none">
+       <ul class="no-bullets-footer">
+         <ul class="list-unstyled">
+             <li>Condition générale</li>
+             <li class="mention-link">
+           <a class="condition" href="mention-l%C3%A9gal.html">Mention légal</a>
+             </li>
+     <li class="mention-link">
+         <a class="condition" href="condition-d'achat.html"><p>Condition de service </p></a>
+             </li>
+
+           
+          
+         
+        </ul>
+      </ul>
+    </div>
+    </div>
+      
+      <!-- lien social-->
+         <div class="col-sm-4">
+      <div id="none">
+       <ul class="no-bullets-footer">
+         <ul class="list-unstyled">
+             <li>Nous suivre:</li>
+              <li class="a-link">
+            <a href="https://"><i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+          </li>
+           <li>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+          </li>
+          <li class="a-link">
+            <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    </div>
+      
+  </div>
+</div>
+    </div>
+     </div>
+    </div>
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <!-- Links -->
+        <h5 class="text-uppercase"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+             <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="footer-copyright text-center py-3"> <a href="https://github.com/morana"><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2024 Morana studio, tout droit réservés.
+  </div>
+  </div>
+</footer>
+<!-- Footer -->
+            
+     <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="Zoom-img.js"></script>
+    
+    <script>
+        // Attendre que le DOM soit complètement chargé
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fonction qui affiche seulement le div sélectionné
+            window.toggleDivs = function(selectedDiv) {
+                // Mettre à jour l'état actif des boutons
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btn' + selectedDiv).classList.add('active');
+                
+                // Cacher tous les divs
+                for (let i = 1; i <= 5; i++) {
+                    const div = document.getElementById('div' + i);
+                    if (i === selectedDiv) {
+                        div.classList.remove('hidden');
+                    } else {
+                        div.classList.add('hidden');
+                    }
+                }
+            };
+            
+            // Fonction qui affiche tous les divs
+            window.showAllDivs = function() {
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btnAll').classList.add('active');
+                
+                for (let i = 1; i <= 5; i++) {
+                    document.getElementById('div' + i).classList.remove('hidden');
+                }
+            };
+            
+            // Fonction qui cache tous les divs
+            window.hideAllDivs = function() {
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btnNone').classList.add('active');
+                
+                for (let i = 1; i <= 5; i++) {
+                    document.getElementById('div' + i).classList.add('hidden');
+                }
+            };
+        });
+    </script>
+    
+    
+    
+     <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    
+</body>
+</html>

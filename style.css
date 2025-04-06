@@ -1,0 +1,1621 @@
+
+.container {
+    display: flex;
+    flex-direction: column; /* Les éléments seront empilés verticalement */
+}
+
+.row {
+    width: 100%;
+}
+
+#retour {
+    margin-top: 20px; /* Si vous voulez un peu d'espace entre la div et le bouton */
+}
+
+body {
+    font-family: Supreme LL, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+   
+      cursor: url('MoranaStudio/pattes_24px.png') 20 20, auto;
+background-color: black !important;
+}
+
+.carrousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images {
+      padding: 3%;
+    height: 550px;
+    width: 490px;
+}
+ .carousel-images img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            display: none;
+            border-radius: 4px;
+        }
+        
+.carousel{
+    padding: 3%;
+    height: 550px;
+    width: 490px;
+}
+
+.carrousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrousel-image {
+    width: auto;
+    height: auto;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+      cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+.next {
+    right: 10px;
+      cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+      cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+.img-réal{
+    padding: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: grey !important; /* Changer la couleur lors du survol */
+}
+
+
+/* Sur les petits écrans (comme les téléphones), on réduit encore la taille et on empile les éléments en colonne */
+@media (max-width: 767px) {
+  .padding-service {
+    font-size: 14px; /* Taille plus petite */
+    padding: 3px 0;  /* Moins de padding */
+  }
+
+  /* On ajuste l'alignement pour les petits écrans */
+  #center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments */
+  }
+
+  .service-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer les éléments de la liste */
+  }
+
+  .service-list li {
+    width: 100%; /* Chaque élément prend toute la largeur */
+    text-align: center; /* Centrer le texte des éléments */
+  }
+}
+/* Par défaut, les éléments seront disposés en ligne (sur les grands écrans) */
+.service-list {
+  display: flex;  /* Utilisation de flexbox pour disposer les éléments en ligne */
+  justify-content: space-around;  /* Espacement uniforme entre les éléments */
+  padding: 0;
+}
+
+
+/* Sur les petits écrans (comme les téléphones), on empile les éléments en colonne */
+@media (max-width: 767px) {
+  .service-list {
+    flex-direction: column;  /* Disposition en colonne sur les petits écrans */
+    align-items: center;  /* Centrer les éléments */
+  }
+
+  .padding-service {
+    font-size: 14px;  /* Taille de texte plus petite sur téléphone */
+    padding: 3px 0;   /* Moins de padding */
+  }
+}
+
+
+/* Personnalisation pour mobile : rendre le dropdown plus visible */
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    background-color: #333;
+  }
+
+  .navbar-nav .dropdown-item {
+    color: white;
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    background-color: #555;
+  }
+}
+
+ 
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+{box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+   border:solid 2px red;
+    color: white;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+   
+}
+.boder{
+     background-image: linear-gradient(to right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+     background-color:black;
+}
+input[type=submit] {
+  background-color:  transparent;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: none;
+    color: gray; 
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+
+#center {
+  display: flex;
+  justify-content: center;  /* Centrer horizontalement */
+  align-items: center;      /* Centrer verticalement */
+  height: 100%;             /* Assurez-vous que l'élément parent ait une hauteur définie */
+}
+
+/* Liste sans puces */
+.no-bullets {
+  list-style-type: none;  /* Retire les puces */
+  padding: 0;
+  margin: 0;
+  display: flex;          /* Affiche les éléments en ligne */
+  justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+/* Espacement entre les éléments */
+.padding-service {
+  margin: 0 20px;         /* Ajoute un espace entre chaque service */
+  font-size: 18px;        /* Taille de texte */
+  text-align: center;     /* Centrer le texte */
+}
+
+
+
+
+
+.padding-button{
+    padding-top: 35px;
+}
+@font-face {
+    font-family: 'Supreme LL';
+    src: url('fonts/supremell.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-toggler-icon {
+    
+  background-color: transparent; /* Couleur blanche */
+}
+
+
+#center{
+    display: block center;
+}
+.h1{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+.h2{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+.h3{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+.h4{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+.h5{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+
+.img_carte{
+   
+    padding: 30px;
+    vertical-align: middle;
+   width: 80%;
+    height: 80%;  
+}
+
+
+
+.titre_carte{
+    text-align: center;
+    font-family: 'SUPREME LL',sans-serif;
+    color: white;
+    font-size: 18px;
+  
+}
+.titre_carte_center{
+    font-family: 'SUPREME LL',sans-serif;
+    color: white;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-yellow{
+    font-family: 'SUPREME LL',sans-serif;
+    color: #F9ED66;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-green{
+    font-family: 'SUPREME LL',sans-serif;
+    color: #A1B319;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-pink{
+    font-family: 'SUPREME LL',sans-serif;
+    color: #CF4C84;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-orange{
+    font-family: 'SUPREME LL',sans-serif;
+    color: #F48352;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-purple{
+    font-family: 'SUPREME LL',sans-serif;
+    color: #9A94C7;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+#box_a{    
+     background-image: linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+     background-color:black;
+    border-radius: 20px 20px;
+    height: 100px;
+    width:  border: 2px solid #03A678;
+    
+}
+.no-bullets-center{
+    text-align: center;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.no-bullets{
+    display: block inline;
+     font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+      padding left: 60px;
+}
+.padding-service{
+    padding-left: 20px;
+    font-size: 15px;
+}
+.no-bullets-footer{
+
+     font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+}
+    ol.nomarge, ol.li-nomarge li,
+ul.nomarge, ul.li-nomarge li{ 
+  padding:0;
+  margin:0;
+}
+    
+
+.navbar-dark .navbar-brand {
+    color: black;
+}
+/*logo nav bar*/
+.navbar-logo {
+    display: inline-block;
+    padding-top: none;
+    padding-bottom: none;
+    margin-right: none;
+    font-size: none;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+/*nav bar link*/
+.navbar-dark .navbar-nav .nav-link {
+    font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+    padding-top: 50px;
+    
+    
+}
+
+
+
+
+   .bg-dark {
+    background-color: black ;
+
+
+}
+/*nav bar*/
+.link-service{
+    color:white;
+}
+
+/*line*/
+.yellow-line{
+    background-color: #F9ED66; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.green-line{
+    background-color:#A1B319; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.pink-line{
+    background-color: #CF4F84; /* For browsers that do not support gradients */
+   
+    height: 2px;
+    width: border: 2px solid ;
+}.orange-line{
+    background-color: #F48352; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.purple-line{
+    background-color: #9A94C7; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+
+
+.vertical_line{
+
+     border-left: 2px solid  #03A678;
+  height: 200px;
+}
+.condition{
+    text-align: center;
+    color: white;
+    font-size: 15px ;
+}
+.presentation{
+    text-align: justify;
+    text-align-last: center;
+    font: none;
+   
+}
+.nos-offres {
+  color: white; /* Lien en blanc par défaut */
+  text-decoration: none; /* Enlever la souligné */
+  transition: color 0.3s ease; /* Effet de transition pour le changement de couleur */
+       cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+/* Changer la couleur en gris au survol */
+.nos-offres:hover {
+  color: gray; /* Couleur gris au survol */
+       cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+.prix{
+    color: transparent;
+    font-size:40 ;
+      background-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    background-clip: text;
+    padding-left: 50%;
+    
+}
+.prix-spé{
+    color: transparent;
+    font-size:40 ;
+      background-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    background-clip: text;
+    padding-left: none;
+    
+}
+.prix_center{
+     color: transparent;
+    font-size: 60;
+      background-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    background-clip: text;
+    text-align: center;
+}
+
+footer a {
+    color: white; /* Définit la couleur des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+}
+
+/* Effet au survol des liens */
+footer a:hover {
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    color: gray; /* Change la couleur en gris lors du survol */
+}
+#box_footer{
+    background-color:black;
+    
+    -moz-box-shadow:    inset 0 0px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+    
+    /*
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    */
+    
+}
+
+#box_aa{
+         -moz-box-shadow:    inset 0 0px #000000;
+   -webkit-box-shadow: inset 0 0 50px #000000;
+   box-shadow:         inset 0 0 50px #000000;
+    
+   
+    
+}
+
+.dropdown-menu.show {
+    display: block;
+    
+
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    
+    border:solid 2px red;
+    border-radius: solid 50px 50px;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+   
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: transparent;
+}
+ .nav-link-menu {
+   font: none;
+    font-size: 17px;
+    color:white;
+   
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+    padding-top: 10px;
+    
+}
+#logo{
+    
+    background-image:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   padding:1%;
+    border-radius: none;
+    
+      cursor: url('MoranaStudio/pattes_16px.png')16 16, pointer;
+    transition: color 300ms;
+    
+}
+
+    
+#image-colab{
+    
+   
+    height: 322px;
+    width: 100%;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+
+#image{
+    
+    background-image:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+.custom-image-size {
+    max-width: 80%;  /* Ajuste cette valeur selon tes besoins */
+    height: auto;    /* Conserve les proportions de l'image */
+}
+.img-1{
+    
+    background-image:none;
+    height: 300px;
+    width: 150px;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+#image2{
+    
+    background-image:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+#image3{
+    
+    background-image:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+
+.titre{
+    font-family: 'Supreme LL', sans-serif;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+}
+#padding-logo-footer{
+    padding: 15px;
+    
+}
+.logo-footer{
+
+    width: 1OOpx;
+    height: 100px;
+}
+.logo-offre{
+    image-resolution: net;
+    width: 70px;
+    height: 70px;
+}
+.a-center{
+   font-family: 'Quicksand',sans-serif;
+    color: white;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+
+mention-link:hover { color: gray  }
+mention-link {
+    color:red;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 2px;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+     cursor: url('MoranaStudio/pattes_16px.png')16 16, pointer;
+    transition: color 300ms;
+}
+a-link:hover { color: gray  }
+a-link {
+    color:white;
+    text-decoration: none;
+    background-color: transparent;
+    
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+     cursor: url('MoranaStudio/pattes_16px.png')16 16, pointer;
+    transition: color 300ms;
+}
+.p{
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: white;
+     text-align: center;
+    padding-left: 6%;
+    padding-right: none;
+     text-align: justify;
+    text-align-last: center;
+}
+.p_carte{
+    padding: 3%;
+}
+.p-center{
+   display: flex;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: white;
+     text-align: center;
+    padding-left: 6%;
+    padding-right: none;
+     text-align: justify;
+    text-align-last: center;
+}
+.p-presentation{
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: white;
+  padding-left:15%;
+    padding-right: 15%;
+    text-align: justify;
+    text-align: center;
+    
+}
+.p-philo{
+    font-size:18px;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: white;
+    padding-left:15%;
+    padding-right: 15%;
+      text-align: justify;
+}
+.p-colab{
+    margin-top: none;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: white;
+    padding-top: none;
+    padding-left:none;
+    padding-right: none;
+      text-align:justify;
+    text-align-last: left;
+}
+
+.p-yellow{
+     margin-top: 3%;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    color:#F9ED66 ;
+    padding-left:15%;
+    padding-right: 15%;
+     text-align: justify;
+    text-align-last: center;
+}
+.p-green{
+     margin-top: none;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    color:#A1B319 ;
+    padding-left:none%;
+    padding-right: none%;
+    text-align: justify;
+    text-align-last: center;
+    padding: 3%;
+}
+.p-pink{
+     margin-top: 3%;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    color: #CF4F84;
+    padding-left:15%;
+    padding-right: 15%;
+     text-align: justify;
+    text-align-last: center;
+}
+.p-orange{
+     margin-top: 3%;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    color:#F48352 ;
+    padding-left:15%;
+    padding-right: 15%;
+    text-align: justify;
+    text-align-last: center;
+}
+.p-purple{
+     margin-top: 3%;
+    display: flex;
+    font-family: 'Quicksand',sans-serif;
+    color:#9A94CF ;
+    padding-left:15%;
+    padding-right: 15%;
+      text-align: justify;
+    text-align-last: center;
+}
+.espace_verticale{
+   
+   padding:15px;
+   
+}
+
+#box_b{
+   
+/*-webkit-box-shadow: 3px 3px 5px 6px grey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /*-moz-box-shadow:    3px 3px 5px 6px grey;  /* Firefox 3.5 - 3.6 */
+  /*box-shadow:         3px 3px 5px 6px grey;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */*/
+    background-color: black; /* For browsers that do not support gradients */
+   padding-left: none;
+    padding:none;
+    text-align: center;
+    background-color:black;
+    border-radius: 20px 20px;
+    
+    
+}
+#box_b-off{
+   
+/*-webkit-box-shadow: 3px 3px 5px 6px grey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /*-moz-box-shadow:    3px 3px 5px 6px grey;  /* Firefox 3.5 - 3.6 */
+  /*box-shadow:         3px 3px 5px 6px grey;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */*/
+    background-color: black; /* For browsers that do not support gradients */
+   padding-left: 5%;
+    padding:none;
+    text-align: center;
+    background-color:black;
+    border-radius: 20px 20px;
+    
+    
+}
+#box_bb{
+
+    background-color: #A1B319; /* For browsers that do not support gradients */
+    background-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+    
+    
+}
+#box_yellow{
+    background-color: #F9ED66; /* For browsers that do not support gradients */
+    
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+    
+    
+}
+#box_green{
+       background-color: #A1B319;/* For browsers that do not support gradients */
+   /* background-image:linear-gradient(to bottom right,#,#A1B319,#CF4F84, #F48352,#9A94C7);*/
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+   
+    
+}
+#box_pink{
+       background-color: #CF4F84;/* For browsers that do not support gradients */
+   /* background-image:linear-gradient(to bottom right,#,#A1B319,#CF4F84, #F48352,#9A94C7);*/
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+   
+    
+}
+#box_orange{
+       background-color: #F48352;/* For browsers that do not support gradients */
+   /* background-image:linear-gradient(to bottom right,#,#A1B319,#CF4F84, #F48352,#9A94C7);*/
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+   
+    
+}
+#box_purple{
+       background-color: #9A94C7;/* For browsers that do not support gradients */
+   /* background-image:linear-gradient(to bottom right,#,#A1B319,#CF4F84, #F48352,#9A94C7);*/
+    padding: 2px;
+    border: none;
+    border-radius: 20px 20px;
+   
+    
+}
+.footer-copyright text-center py-3{
+    color: white;
+}
+
+        /* les iframe pour les div et onglet web */
+        #iframe-morana {
+            width:none;
+            height: none
+            border: none;
+        }
+
+        .content {
+            padding:none;
+        }
+ /* Style de l'iframe footer */
+        #iframe2 {
+            width: 100%;
+            height: 280px; /* hauteur de la navbar */
+            border: none;
+        }
+
+        .content {
+            padding:none;
+        }
+
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: grey !important; /* Changer la couleur lors du survol */
+}
+/* Par défaut, on définit une taille de police et un padding plus petit */
+.padding-service {
+    color: white;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+a{
+    color:white;
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+a:link
+{
+    color: white;
+    font-weight:normal;
+}
+a:visited
+{
+    color: white;
+    font-weight:normal;
+}
+a :hover{
+    color :grey;
+    
+}
+.paading-service :hover{
+    color: grey:
+    
+}
+/* Sur les petits écrans (comme les téléphones), on réduit encore la taille et on empile les éléments en colonne */
+@media (max-width: 767px) {
+  .padding-service {
+    font-size: 14px; /* Taille plus petite */
+    padding: 3px 0;  /* Moins de padding */
+  }
+
+  /* On ajuste l'alignement pour les petits écrans */
+  #center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments */
+  }
+
+  .service-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer les éléments de la liste */
+  }
+
+  .service-list li {
+    width: 100%; /* Chaque élément prend toute la largeur */
+    text-align: center; /* Centrer le texte des éléments */
+  }
+}
+/* Par défaut, les éléments seront disposés en ligne (sur les grands écrans) */
+.service-list {
+  display: flex;  /* Utilisation de flexbox pour disposer les éléments en ligne */
+  justify-content: space-around;  /* Espacement uniforme entre les éléments */
+  padding: 0;
+}
+
+.padding-service {
+  font-size: 16px;  /* Taille de texte par défaut */
+  padding: 5px 10px;  /* Padding par défaut */
+}
+
+/* Sur les petits écrans (comme les téléphones), on empile les éléments en colonne */
+@media (max-width: 767px) {
+  .service-list {
+    flex-direction: column;  /* Disposition en colonne sur les petits écrans */
+    align-items: center;  /* Centrer les éléments */
+  }
+
+  .padding-service {
+    font-size: 14px;  /* Taille de texte plus petite sur téléphone */
+    padding: 3px 0;   /* Moins de padding */
+  }
+}
+
+
+/* Personnalisation pour mobile : rendre le dropdown plus visible */
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    background-color: #333;
+  }
+
+  .navbar-nav .dropdown-item {
+    color: white;
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    background-color: #555;
+  }
+}
+
+ 
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+{box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+   border:solid 2px red;
+    color: white;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+   
+}
+.boder{
+     background-image: linear-gradient(to right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+     background-color:black;
+}
+input[type=submit] {
+  background-color:  transparent;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: none;
+    color: gray; 
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+
+#center {
+  display: flex;
+  justify-content: center;  /* Centrer horizontalement */
+  align-items: center;      /* Centrer verticalement */
+  height: 100%;             /* Assurez-vous que l'élément parent ait une hauteur définie */
+}
+
+/* Liste sans puces */
+.no-bullets {
+  list-style-type: none;  /* Retire les puces */
+  padding: 0;
+  margin: 0;
+  display: flex;          /* Affiche les éléments en ligne */
+  justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+/* Espacement entre les éléments */
+.padding-service {
+  margin: 0 20px;         /* Ajoute un espace entre chaque service */
+  font-size: 18px;        /* Taille de texte */
+  text-align: center;     /* Centrer le texte */
+}
+
+
+
+
+
+.padding-button{
+    padding-top: 35px;
+}
+@font-face {
+    font-family: 'Supreme LL';
+    src: url('fonts/supremell.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-toggler-icon {
+    
+  background-color: transparent; /* Couleur blanche */
+}
+
+#center{
+    display: block center;
+}
+.h1{
+   font-family: 'Supreme LL', sans-serif;
+  
+}
+
+.img_carte{
+   
+    padding: 30px;
+    vertical-align: middle;
+    width: 80%;
+    height: 80%;  
+}
+
+
+
+.titre_carte{
+    text-align: center;
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+  
+}
+.titre_carte_center{
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+.titre_carte_center-yellow{
+    font-family: 'Quicksand',sans-serif;
+    color: #F9ED66;
+    font: ;
+    text-align: center;
+    padding-left: none;
+    padding-right: 10%;
+    
+}
+.titre_carte_center-green{
+    font-family: 'Quicksand',sans-serif;
+    color: #A1B319;
+    font: ;
+    text-align: center;
+    padding-left: none; 
+    padding-right: 12%;
+    
+}
+.titre_carte_center-green2{
+    font-family: 'Quicksand',sans-serif;
+    color: #A1B319;
+    font: ;
+    text-align: center;
+    padding-left: none; 
+    padding-right: 8%;   
+}
+.titre_carte_center-pink{
+    font-family: 'Quicksand',sans-serif;
+    color: #CF4C84;
+    font: ;
+    text-align: center;
+    padding-left: none;
+    padding-right: 10%;
+}
+.titre_carte_center-orange{
+    font-family: 'Quicksand',sans-serif;
+    color: #F48352;
+    font: ;
+    text-align: center;
+    padding-left: none;
+    padding-right: 5%;
+}
+.titre_carte_center-purple{
+    font-family: 'Quicksand',sans-serif;
+    color: #9A94C7;
+    font: ;
+    text-align: center;
+    padding-left: none;
+    padding-right: 12%;
+}
+#box_a{    
+     background-image: linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+     background-color:black;
+    border-radius: 20px 20px;
+    height: 100px;
+    width:  border: 2px solid #03A678;
+    
+}
+.no-bullets-center{
+    text-align: center;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.no-bullets{
+    display: block inline;
+     font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+    cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding left: 60px;
+}
+.padding-service{
+    padding-left: 20px;
+    font-size: 15px;
+}
+.no-bullets-footer{
+
+    font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+        /*(255,255,255,.5);*/
+}
+ol.nomarge, ol.li-nomarge li,
+ul.nomarge, ul.li-nomarge li{ 
+  padding:0;
+  margin:0;
+}
+    
+
+.navbar-dark .navbar-brand {
+    color: black;
+}
+/*logo nav bar*/
+.navbar-logo {
+    display: inline-block;
+    padding-top: none;
+    padding-bottom: none;
+    margin-right: none;
+    font-size: none;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+/*nav bar link*/
+.navbar-dark .navbar-nav .nav-link {
+    font: none;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+    padding-top: 50px;
+    
+    
+}
+
+
+
+
+   .bg-dark {
+    background-color: black ;
+
+
+}
+/*nav bar*/
+.link-service{
+    color:white;
+}
+
+/*line*/
+.yellow-line{
+    background-color: #F9ED66; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.green-line{
+    background-color:#A1B319; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.pink-line{
+    background-color: #CF4F84; /* For browsers that do not support gradients */
+   
+    height: 2px;
+    width: border: 2px solid ;
+}.orange-line{
+    background-color: #F48352; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+.purple-line{
+    background-color: #9A94C7; /* For browsers that do not support gradients */
+    
+    height: 2px;
+    width: border: 2px solid ;
+}
+
+.line{
+    background-color: yellow; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    height: 2px;
+    width: border: 2px solid ;
+}
+
+.vertical_line{
+
+     border-left: 2px solid  #03A678;
+  height: 200px;
+}
+.presentation{
+    text-align: center;
+    font: none;
+   
+}
+.nos-offres {
+  color: white; /* Lien en blanc par défaut */
+  text-decoration: none; /* Enlever la souligné */
+  transition: color 0.3s ease; /* Effet de transition pour le changement de couleur */
+       cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+/* Changer la couleur en gris au survol */
+.nos-offres:hover {
+  color: gray; /* Couleur gris au survol */
+       cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+
+
+footer a {
+    color: white; /* Définit la couleur des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+}
+
+/* Effet au survol des liens */
+footer a:hover {
+     cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    color: gray; /* Change la couleur en gris lors du survol */
+}
+#box_footer{
+    background-color:black;
+    
+    -moz-box-shadow:    inset 0 0px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+    
+    /*
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    */
+    
+}
+
+#box_aa{
+         -moz-box-shadow:    inset 0 0px #000000;
+   -webkit-box-shadow: inset 0 0 50px #000000;
+   box-shadow:         inset 0 0 50px #000000;
+    
+   
+    
+}
+
+.dropdown-menu.show {
+    display: block;
+    
+
+}
+
+.navbar-nav .dropdown-menu {
+    position: fixed;
+    float: none;
+    
+    border:solid 2px red;
+    border-radius: solid 50px 50px;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+   
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: transparent;
+}
+ .nav-link-menu {
+   font: none;
+    font-size: 17px;
+    color:white;
+   
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+    padding-left: 30px;
+    padding-top: 10px;
+    
+}
+
+    
+
+
+#image{
+    
+    background-image:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   padding: none;
+    border-radius: 20px 20px;
+    
+}
+
+
+.titre-center{
+    text-align: center;
+    font-family: 'Supreme LL', sans-serif;
+    color: white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+}
+.titre-mention-légal{
+    text-align: center
+    font-family: 'Supreme LL', sans-serif;
+    color: white;
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+}
+#padding-logo-footer{
+    padding: 15px;
+    
+}
+.logo-footer{
+
+    width: 1OOpx;
+    height: 100px;
+}
+.a-center{
+    font-family: :'Supreme LL',sans-serif;
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+    font: ;
+    text-align: center;
+    padding-left: none;
+}
+
+a-link:hover { color: gray  }
+a-link {
+    color:white;
+    text-decoration: none;
+    background-color: transparent;
+    
+    text-shadow: 2px 0 0 Black, -2px 0 0 Black, 0 2px 0 Black, 0 -2px 0 Black, 1px 1px Black, -1px -1px 0 Black, 1px -1px 0 Black, -1px 1px 0 Black;
+    /*(255,255,255,.5);*/
+    
+     cursor: url('MoranaStudio/pattes_16px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+
+
+
+
+
+
+
+.espace_verticale{
+   
+   padding:15px;
+   
+}
+
+
+
+
+
+
+
+.footer-copyright text-center py-3{
+    color: white;
+}
+
+/* Conteneur pour centrer le bouton */
+.container {
+    text-align: center;
+}
+
+
+/* Style du bouton Retour */
+#btn-retour {
+    padding-top: 100%;
+    background-color: transparent; /* Couleur de fond verte */
+    color: white; /* Texte en blanc */
+    border: 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+    
+   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+}
+
+
+/* Effet au survol */
+.btn-retour:hover {
+    color:grey ; /* Changement de couleur au survol */
+
+      cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+    
+}
+
+
+
+

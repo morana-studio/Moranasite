@@ -1,0 +1,245 @@
+import React, { useState, useEffect } from 'react';
+import { Send } from 'lucide-react';
+
+type FormData = {
+  firstname: string;
+  lastname: string;
+  email: string;
+  country: string;
+  message: string;
+};
+
+function App() {
+  const [formData, setFormData] = useState<FormData>({
+    firstname: '',
+    lastname: '',
+    email: '',
+    country: '',
+    message: ''
+  });
+  const [message, setMessage] = useState({ text: '', isError: false });
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Images du carousel
+  const images = [
+    "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
+    "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6",
+    "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+  ].map(url => `${url}?auto=format&fit=crop&w=800&q=80`);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      changeImage(1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const changeImage = (direction: number) => {
+    setCurrentIndex((prev) => {
+      let newIndex = prev + direction;
+      if (newIndex < 0) newIndex = images.length - 1;
+      if (newIndex >= images.length) newIndex = 0;
+      return newIndex;
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!Object.values(formData).every(value => value)) {
+      setMessage({ text: 'Tous les champs doivent être remplis!', isError: true });
+      return;
+    }
+
+    try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      setMessage({ text: 'Formulaire envoyé avec succès!', isError: false });
+      setFormData({ firstname: '', lastname: '', email: '', country: '', message: '' });
+    } catch (error) {
+      setMessage({ text: 'Une erreur est survenue!', isError: true });
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  return (
+    <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
+      {/* Navigation */}
+      <nav className="navbar navbar-expand-sm navbar-dark bg-transparent mb-8">
+        <div className="container flex justify-between items-center">
+          <a href="/" className="text-2xl font-bold">Morana Studio</a>
+          <div className="flex items-center space-x-6">
+            <a href="/realisation" className="hover:text-gray-300">Réalisation</a>
+            <a href="/services" className="hover:text-gray-300">Services</a>
+            <a href="/contact" className="hover:text-gray-300">Contact</a>
+            <div className="relative group">
+              <button className="hover:text-gray-300">Lng</button>
+              <div className="absolute hidden group-hover:block right-0 mt-2 w-24 bg-black border border-gray-600 rounded-md">
+                <a href="#" className="block px-4 py-2 hover:bg-gray-800">FR</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-800">EN</a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-800">EP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Formulaire de Contact */}
+          <div>
+            <h1 className="text-3xl font-bold mb-8">Nous Contacter</h1>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="fname" className="block font-semibold mb-2">Prénom</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  value={formData.firstname}
+                  onChange={handleChange}
+                  placeholder="Votre prénom..."
+                  className="w-full p-3 bg-black border border-gradient rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{
+                    borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                    borderImageSlice: '1'
+                  }}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="lname" className="block font-semibold mb-2">Nom</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  value={formData.lastname}
+                  onChange={handleChange}
+                  placeholder="Votre nom..."
+                  className="w-full p-3 bg-black border border-gradient rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{
+                    borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                    borderImageSlice: '1'
+                  }}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block font-semibold mb-2">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Votre email..."
+                  className="w-full p-3 bg-black border border-gradient rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{
+                    borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                    borderImageSlice: '1'
+                  }}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="country" className="block font-semibold mb-2">Pays</label>
+                <select
+                  id="country"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  className="w-full p-3 bg-black border border-gradient rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{
+                    borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                    borderImageSlice: '1'
+                  }}
+                >
+                  <option value="">Sélectionnez votre pays</option>
+                  <option value="france">France</option>
+                  <option value="belgique">Belgique</option>
+                  <option value="suisse">Suisse</option>
+                  <option value="canada">Canada</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block font-semibold mb-2">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Écrivez votre message ici..."
+                  rows={6}
+                  className="w-full p-3 bg-black border border-gradient rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  style={{
+                    borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                    borderImageSlice: '1'
+                  }}
+                />
+              </div>
+
+              {message.text && (
+                <div className={`p-4 rounded-md ${message.isError ? 'bg-red-900' : 'bg-green-900'}`}>
+                  <p>{message.text}</p>
+                </div>
+              )}
+
+              <button
+                type="submit"
+                className="w-full flex items-center justify-center gap-2 p-3 border border-gradient rounded-md hover:bg-gray-900 transition-colors"
+                style={{
+                  borderImage: 'linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84,#F48352,#9A94C7)',
+                  borderImageSlice: '1'
+                }}
+              >
+                <Send size={16} />
+                Envoyer
+              </button>
+            </form>
+          </div>
+
+          {/* Carousel */}
+          <div>
+            <h1 className="text-3xl font-bold mb-8">Dernières réalisations</h1>
+            <div className="relative rounded-lg overflow-hidden">
+              <button
+                onClick={() => changeImage(-1)}
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full hover:bg-black/75"
+              >
+                &#10094;
+              </button>
+              
+              <div className="relative h-[500px]">
+                {images.map((src, index) => (
+                  <img
+                    key={index}
+                    src={src}
+                    alt={`Réalisation ${index + 1}`}
+                    className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+                      index === currentIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={() => changeImage(1)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full hover:bg-black/75"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;

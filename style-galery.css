@@ -1,0 +1,197 @@
+
+
+/* style galery*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid responsive */
+  gap: 15px;
+  padding: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vertical img {
+  height: 300px; /* Ajuste la taille des images verticales */
+  object-fit: cover;
+}
+
+.horizontal img {
+  height: 200px; /* Ajuste la taille des images horizontales */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajustement pour les petits écrans */
+  }
+
+  .vertical img {
+    height: 250px; /* Réduit la hauteur des images verticales sur petits écrans */
+  }
+
+  .horizontal img {
+    height: 150px; /* Réduit la hauteur des images horizontales sur petits écrans */
+  }
+}
+
+/* Styles pour le modal */
+.modal {
+  display: none; /* Masqué par défaut */
+  position: fixed;
+  z-index: 1; /* Positionné au-dessus du contenu */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 60px;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style du texte du modal */
+#caption {
+  margin: 10px;
+  text-align: center;
+  color: none;
+  font-size: 0px;
+}
+
+/* Section responsive pour les petits écrans */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #box_b .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  #box_b .vertical img {
+    height: 250px;
+  }
+
+  #box_b .horizontal img {
+    height: 150px;
+  }
+}
+
+
+/* Général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*.padding-service {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.padding-service:hover {
+  background-color: #ddd;
+}*/
+
+/* Sections */
+.service-section {
+  display: none;  /* Masquer toutes les sections au départ */
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+h3 {
+  color: #333;
+}
+
+
+.service-section {
+  display: none;  /* Masquer toutes les sections au début */
+}
+/* div 1,2,3,4,5 */
+ div.content {
+            margin: 5px;
+            padding: 10px;
+            background-color: tr$;
+            border: none;
+        }
+        .hidden {
+            display: none;
+        }
+/*bouton hide div */
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px;
+            background-color: red;
+            border: 1px solid #999;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        button.active {
+            background-color: #a0c7e7;
+            border-color: blue;
+        }
