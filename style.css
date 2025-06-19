@@ -254,6 +254,8 @@ input[type=submit]:hover {
 
 
 .padding-button{
+    padding: 5%;
+    position:fixed;
     padding-top: 35px;
 }
 @font-face {
@@ -263,7 +265,7 @@ input[type=submit]:hover {
     font-style: normal;
 }
 .navbar-toggler-icon {
-    
+   position: fixed;
   background-color: transparent; /* Couleur blanche */
 }
 
@@ -592,6 +594,7 @@ footer a:hover {
    
 }
 .dropdown-item:focus, .dropdown-item:hover {
+    position: fixed;
     color: gray;
     text-decoration: none;
     background-color: transparent;
@@ -612,8 +615,8 @@ footer a:hover {
 #logo{
     
     background-image:none;
-    height: 120%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     display: flex;
    padding:1%;
     border-radius: none;
@@ -732,14 +735,13 @@ a-link {
      cursor: url('MoranaStudio/pattes_16px.png')16 16, pointer;
     transition: color 300ms;
 }
-.p{
+.p-parag{
     display: flex;
     font-family: 'Quicksand',sans-serif;
     font-weight: 400;
     color: white;
-     text-align: center;
-    padding-left: 6%;
-    padding-right: none;
+    align-self: center;
+padding-left: 10%;
      text-align: justify;
     text-align-last: center;
 }
@@ -856,7 +858,7 @@ a-link {
     background-color: black; /* For browsers that do not support gradients */
    padding-left: none;
     padding:none;
-    text-align: center;
+  
     background-color:black;
     border-radius: 20px 20px;
     
@@ -1172,10 +1174,7 @@ input[type=submit]:hover {
     font-weight: normal;
     font-style: normal;
 }
-.navbar-toggler-icon {
-    
-  background-color: transparent; /* Couleur blanche */
-}
+
 
 #center{
     display: block center;
@@ -1315,6 +1314,7 @@ ul.nomarge, ul.li-nomarge li{
 }
 /*logo nav bar*/
 .navbar-logo {
+    padding-left: 20%;
     display: inline-block;
     padding-top: none;
     padding-bottom: none;
