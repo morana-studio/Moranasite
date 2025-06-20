@@ -168,9 +168,9 @@ button:hover {
     color: white;
   }
 
-  .navbar-nav .dropdown-item:hover {
+  /*.navbar-nav .dropdown-item:hover {
     background-color: #555;
-  }
+  }*/
 }
 
  
@@ -613,7 +613,7 @@ footer a:hover {
     
 }
 #logo{
-    
+     
     background-image:none;
     height: 80%;
     width: 80%;
@@ -1466,7 +1466,7 @@ footer a:hover {
 
 }
 
-.navbar-nav .dropdown-menu {
+/*.navbar-nav .dropdown-menu {
     position: fixed;
     float: none;
     
@@ -1476,13 +1476,15 @@ footer a:hover {
     border-image-slice:1;
     background: black;
    
-}
+}*/
+
 .dropdown-item:focus, .dropdown-item:hover {
     color: gray;
     text-decoration: none;
     background-color: transparent;
 }
- .nav-link-menu {
+
+.nav-link-menu {
    font: none;
     font-size: 17px;
     color:white;
