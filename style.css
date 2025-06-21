@@ -576,11 +576,6 @@ footer a:hover {
     
 }
 
-.dropdown-menu.show {
-    display: block;
-    
-
-}
 
 .navbar-nav .dropdown-menu {
     position: static;
@@ -593,12 +588,7 @@ footer a:hover {
     background: black;
    
 }
-.dropdown-item:focus, .dropdown-item:hover {
-    position: fixed;
-    color: gray;
-    text-decoration: none;
-    background-color: transparent;
-}
+
  .nav-link-menu {
    font: none;
     font-size: 17px;
@@ -612,6 +602,24 @@ footer a:hover {
     padding-top: 10px;
     
 }
+
+
+.dropdown-menu.show {
+    display: block;
+    
+
+}
+
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+  
 #logo{
      
     background-image:none;
@@ -1459,46 +1467,7 @@ footer a:hover {
    
     
 }
-
-.dropdown-menu.show {
-    display: block;
-    
-
-}
-
-/*.navbar-nav .dropdown-menu {
-    position: fixed;
-    float: none;
-    
-    border:solid 2px red;
-    border-radius: solid 50px 50px;
-    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
-    border-image-slice:1;
-    background: black;
-   
-}*/
-
-.dropdown-item:focus, .dropdown-item:hover {
-    color: gray;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.nav-link-menu {
-   font: none;
-    font-size: 17px;
-    color:white;
-   
-    
-   cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
-    transition: color 300ms;
-    
-    padding-left: 30px;
-    padding-top: 10px;
-    
-}
-
-    
+  
 
 
 #image{
