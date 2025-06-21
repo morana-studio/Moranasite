@@ -32,3 +32,35 @@ function detectMobileScreen() {
 window.addEventListener("load", detectMobileScreen);
 // Et lors d’un redimensionnement (rotation, pliage, split screen, etc.)
 window.addEventListener("resize", detectMobileScreen);
+
+
+function detectXCover5() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const ratio = window.devicePixelRatio || 1;
+  const ua = navigator.userAgent || "";
+
+  // Méthode 1 : User-Agent (plus fiable)
+  const isUserAgentXCover5 = ua.includes("SM-G525");
+
+  // Méthode 2 : Dimensions et ratio d'écran (fallback)
+  const isScreenMatch =
+    (width >= 350 && width <= 380) &&
+    (ratio >= 2 && ratio <= 3.5) &&
+    (height >= 640); // évite les anciens petits appareils
+
+  if (isUserAgentXCover5 || isScreenMatch) {
+    console.log("📱 Samsung Galaxy XCover 5 détecté !");
+    document.body.classList.add("xcover5");
+
+    // Tu peux lancer ici un code spécifique pour cet appareil
+    // Exemple : personnalisation du design
+  } else {
+    console.log("ℹ️ Appareil différent détecté.");
+  }
+}
+
+// Exécuter au chargement
+window.addEventListener("load", detectXCover5);
+// Et si redimensionnement (rotation, split screen…)
+window.addEventListener("resize", detectXCover5);

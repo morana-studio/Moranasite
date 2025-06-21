@@ -81,3 +81,5 @@ body.mobile-view {
           border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 380px) and (min-width: 350px) and (orientation: portrait)
