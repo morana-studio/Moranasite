@@ -1081,7 +1081,7 @@ a :hover{
 /* Personnalisation pour mobile : rendre le dropdown plus visible */
 @media (max-width: 768px) {
   .navbar-nav .dropdown-menu {
-    background-color: #333;
+    background-color: black;
   }
 
   .navbar-nav .dropdown-item {
