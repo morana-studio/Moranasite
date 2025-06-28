@@ -253,22 +253,6 @@ input[type=submit]:hover {
 
 
 
-.padding-button{
-    padding: 5%;
-    position:fixed;
-    padding-top: 35px;
-}
-@font-face {
-    font-family: 'Supreme LL';
-    src: url('fonts/supremell.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-.navbar-toggler-icon {
-   position: fixed;
-  background-color: transparent; /* Couleur blanche */
-}
-
 
 #center{
     display: block center;
@@ -1173,9 +1157,7 @@ input[type=submit]:hover {
 
 
 
-.padding-button{
-    padding-top: 35px;
-}
+
 @font-face {
     font-family: 'Supreme LL';
     src: url('fonts/supremell.otf') format('opentype');
@@ -1350,6 +1332,12 @@ ul.nomarge, ul.li-nomarge li{
     
 }
 
+.p-brand-D{
+      text-align: center;
+    font-family: 'SUPREME LL',sans-serif;
+    color: white;
+    font-size: 18px;
+}
 
 
 
@@ -1532,11 +1520,7 @@ a-link {
 
 
 
-.espace_verticale{
-   
-   padding:15px;
-   
-}
+
 
 
 
@@ -1588,5 +1572,43 @@ a-link {
 }
 
 
+.space-h{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 30px;
+    background: black;
+    width: 100%;
+    
+}
+.padding-button{
+    padding: 5%;
+    position:absolute;
+    padding-top: 35px;
+}
+@font-face {
+    font-family: 'Supreme LL';
+    src: url('fonts/supremell.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-toggler-icon {
+   position:static;
+    color: white;
+  background-color: transparent; /* Couleur blanche */
+}
 
+
+
+.navbar-dark .navbar-toggler {
+     border:solid 2px red;
+    color: white;
+    border-image:linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
+    border-image-slice:1;
+    background: black;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+ padding-left: 3px; 
+        
+}
 
