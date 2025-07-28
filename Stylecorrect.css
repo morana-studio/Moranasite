@@ -1,0 +1,655 @@
+body {
+        padding-top: 70px; /* Pour ne pas cacher le contenu sous la navbar fixe */
+    }
+.container{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.row{
+      padding-left: 2em;
+    padding-right: 1em;
+    
+}
+/*navbar*/
+    @media (max-width: 576px) {
+        .navbar-logo {
+            margin-left: 10px;
+        }
+        .navbar-nav {
+            text-align: center;
+        }
+        .dropdown-menu {
+            text-align: center;
+        }
+    }
+
+/*serzvices liste*/
+.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0;
+}
+
+/*responsive service*/
+
+@media (max-width: 576px) {
+  #center {
+    text-align: center;
+  }
+}
+/* presentation*/
+
+
+@media (max-width: 576px) {
+  .p-presentation {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+/* comab */
+#image-colab {
+      width: 100%;
+      height: auto;
+      border-radius: 20px 20px !important;
+      display: block;
+      object-fit: cover;
+    }
+
+/*about */
+.titre_carte_center {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+
+
+ /* Responsive tweaks */
+    @media (max-width: 576px) {
+      .p-colab {
+        font-size: 1rem;
+      }
+    }
+
+/* Sur petits écrans (max 576px), texte centré */
+@media (max-width: 576px) {
+  .p-colab {
+    text-align: center;
+    text-align-last: center;
+  }
+}
+
+ /* === CSS pour alignement des prix === */
+ *
+    @media (min-width: 768px) {
+      .prix {
+        text-align: right;
+      }
+    }
+@media (max-width: 350px) {
+  /* Conteneur principal, pour réduire les marges/padding */
+  #box_aa .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Pour que les colonnes prennent 100% (normalement déjà col-12) */
+  .col-12, .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Texte des titres un peu plus petit */
+  .titre_carte {
+    font-size: 1.2rem; /* au lieu de 1.5rem ou plus */
+  }
+
+  /* Texte des paragraphes et listes plus petits */
+  .p_carte ul li, .p_carte p {
+    font-size: 0.85rem;
+  }
+
+  /* Prix : taille plus petite et centré */
+  .prix, .prix-spé {
+    font-size: 1.3rem;
+    text-align: center !important; /* forcer centrage */
+  }
+
+  /* Si tu as des marges verticales trop grandes, réduire */
+  .space-h {
+    height: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Réduction des paddings du container */
+  #box_aa .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Colonnes prennent toute la largeur */
+  .col-12, .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Titres un peu plus petits */
+  .titre_carte {
+    font-size: 1.3rem;
+  }
+
+  /* Texte des paragraphes et listes */
+  .p_carte ul li, .p_carte p {
+    font-size: 0.9rem;
+  }
+
+  /* Prix légèrement réduits et centrés */
+  .prix, .prix-spé {
+    font-size: 1.4rem;
+    text-align: center !important;
+  }
+
+  /* Moins d’espace vertical */
+  .space-h {
+    height: 12px;
+  }
+}
+
+
+/* Pour petits écrans < 380px */
+@media (max-width: 380px) {
+  /* Les colonnes prennent 100% largeur */
+  .col-12, .col-sm-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Réduire les paddings du container */
+  #box_aa .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Titres plus petits */
+  .titre_carte {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Texte des listes plus petits et centrés */
+  .p_carte ul.no-bullets-center {
+    font-size: 0.9rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  /* Centrer et réduire taille des prix */
+  .prix, .prix-spé {
+    font-size: 1.4rem;
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  /* Moins d’espace vertical */
+  .space-h {
+    height: 12px;
+  }
+}
+
+/* Pour très petits écrans < 350px */
+@media (max-width: 350px) {
+  .titre_carte {
+    font-size: 1.1rem;
+  }
+
+  .p_carte ul.no-bullets-center {
+    font-size: 0.85rem;
+  }
+
+  .prix, .prix-spé {
+    font-size: 1.2rem;
+  }
+}
+/* Responsive pour écrans inférieurs à 380px */
+@media (max-width: 380px) {
+  /* Forcer colonnes à 100% largeur */
+  .col-12, .col-sm-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Réduction des paddings container */
+  #box_aa .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Titres plus petits et centrés */
+  .titre_carte {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Texte des listes plus petits et centrés */
+  .p_carte ul.no-bullets-center {
+    font-size: 0.9rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* Prix centrés et un peu plus petits */
+  .prix, .prix-spé {
+    font-size: 1.4rem;
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  /* Réduction de l’espace vertical */
+  .space-h {
+    height: 12px;
+  }
+}
+
+/* Responsive pour écrans inférieurs à 350px */
+@media (max-width: 350px) {
+  .titre_carte {
+    font-size: 1.1rem;
+  }
+
+  .p_carte ul.no-bullets-center {
+    font-size: 0.85rem;
+  }
+
+  .prix, .prix-spé {
+    font-size: 1.2rem;
+  }
+}
+/* For multiple elements with the same id, force display block on boxes */
+#box_aa {
+  display: block;
+}
+
+#box_aa .row > [class*="col-"] {
+  float: left; /* force float to align columns side by side */
+  box-sizing: border-box;
+}
+
+/* Ensure the columns take 50% width on small screens and above */
+@media (min-width: 576px) {
+  #box_aa .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* On extra small screens (col-12), width 100% and no float */
+@media (max-width: 575px) {
+  #box_aa .col-12 {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Clear floats after row */
+#box_aa .row::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+@media (max-width: 576px) {
+  /* Ajoute un margin-bottom uniquement sur les colonnes en mode téléphone */
+  .col-12.col-sm-6 {
+    margin-bottom: 1rem; /* Ajuste la valeur selon l’écart voulu */
+  }
+}
+
+@media (max-width: 454px) {
+
+
+  /* Réduction des tailles de texte si nécessaire */
+  .titre_carte {
+    font-size: 1.2rem;
+  }
+
+    .p_carte,{
+        
+    }
+  .p-brand-D,
+  .prix,
+  .prix-spé {
+    font-size: 0.95rem;
+  }
+
+  /* Espacement entre les boîtes */
+  .row.gy-4 > [class*='col-'] {
+    margin-bottom: 20px;
+  }
+
+  /* Centrage et ajustement des titres */
+  .titre_carte, .prix, .prix-spé {
+    text-align: center;
+  }
+
+  /* Si tu veux réduire les marges des containers */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Ajustement des listes */
+  .no-bullets-center li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 768px) {
+  /* Espacement entre les colonnes (les boîtes) */
+  #box_aa .row > .col-sm-6 {
+    margin-bottom: 30px;
+  }
+
+  /* Ajustement du conteneur */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Réduction des paddings internes */
+
+
+  /* Taille de titres adaptée */
+  .titre_carte {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Texte et paragraphes centrés + taille réduite */
+  .p_carte,
+  .p-brand-D,
+  .p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Espacement entre les éléments de liste */
+  .no-bullets-center li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  /* Centrage des prix */
+  .prix,
+  .prix-spé {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* Ligne décorative recentrée et réduite si nécessaire */
+  .line {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 767px) {
+  .prix,
+  .prix-spé {
+    display: block;
+    text-align: center !important;
+    font-size: 1.5rem;
+    margin: 20px auto 0 auto;
+    width: 100%;
+  }
+
+  /* Optionnel : réduire la taille des caractères si trop grands */
+  .prix-spé {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .col-sm-11,
+  .col-12 {
+    text-align: center;
+  }
+
+  .prix,
+  .prix-spé {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .img_carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+      margin-left: 2em;
+      margin-right: 2em;
+  }
+
+  .img_carte img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-sm-3,
+  .col-sm-9 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .col-sm-9 {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .titre_carte_center {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.carousel {
+    position: fixed;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.carousel-images {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 4px;
+}
+
+
+.carousel {
+    position: relative;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-images {
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: none;
+    border-radius: 4px;
+}
+
+
+
+
+.carousel-controls buttn:hover {
+    background-color: grey;
+    color: black;
+    cursor: url('MoranaStudio/pattes_20px.png')16 16, pointer;
+    transition: color 300ms;
+}
+
+
+.carousel-images {
+    height: auto;
+    max-height: 600px;
+}
+
+.carousel-images img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: none;
+    border-radius: 4px;
+}
+
+/* Boutons sous le carrousel */
+.carousel-controls {
+    background-color: transparent;
+    color: white;
+    border-image: linear-gradient(to bottom right, #F9ED66, #A1B319, #CF4F84, #F48352, #9A94C7) !important;
+    border-image-slice: 1 !important;
+    border: 2px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    cursor: url(MoranaStudio/pattes_20px.png) 16 16, pointer;
+    transition: color 300ms
+}
+
+
+
+/* ✅ Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .carousel-images {
+        max-height: 400px;
+    }
+
+    .carousel-images img {
+        height: auto;
+    }
+
+    .carousel-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-controls button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* ✅ Très petits écrans */
+@media (max-width: 480px) {
+    .carousel-images {
+        max-height: 300px;
+    }
+
+    .carousel-controls button {
+        padding: 8px 16px;
+    }
+}
+/* Formulaire responsive */
+form {
+  width: 100%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Carrousel responsive */
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.carousel-images {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+    .carousel-controls button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.corousel-btn-prev{
+    background-color: transparent;
+    color: white;
+    border-image: linear-gradient(to bottom right, #F9ED66, #A1B319, #CF4F84, #F48352, #9A94C7) !important;
+    border-image-slice: 1 !important;
+    border: 2px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    cursor: url(MoranaStudio/pattes_20px.png) 16 16, pointer;
+    transition: color 300ms
+}
