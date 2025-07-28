@@ -1,0 +1,188 @@
+/* 🟩 Base : styles mobiles en priorité */
+body {
+  padding-top: 70px;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.row {
+  display: block;
+}
+.col-sm-6, .col-12 {
+  width: 100%;
+  padding: 1rem 0;
+}
+.titre_carte, .p, .p_carte, .prix {
+  text-align: center;
+}
+
+/* Carrousel : images fluides */
+.carousel-images {
+  max-height: 300px;
+}
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Formulaire */
+form input[type="text"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Footer mobile */
+#box_footer .col-sm-3,
+#box_footer .col-sm-4 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+/* 🟨 TABLETTES & PETITS ORDINATEURS (766px à 1024px) */
+@media (min-width: 766px) and (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-sm-6 {
+    width: 48%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .carousel-images {
+    max-height: 400px;
+  }
+
+  .carousel-controls button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  .titre_carte {
+    font-size: 1.4rem;
+  }
+
+  .prix {
+    font-size: 1.3rem;
+  }
+
+  #box_footer .col-sm-3,
+  #box_footer .col-sm-4 {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* 🟦 ORDINATEURS STANDARD (1025px à 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-sm-6 {
+    width: 48%;
+  }
+
+  .carousel-images {
+    max-height: 480px;
+  }
+
+  .carousel-controls button {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
+  .titre_carte {
+    font-size: 1.6rem;
+  }
+
+  .prix {
+    font-size: 1.4rem;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar .nav-item {
+    margin-left: 20px;
+  }
+
+  #box_footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  #box_footer .col-sm-3,
+  #box_footer .col-sm-4 {
+    width: 30%;
+    text-align: left;
+  }
+}
+
+
+/* 🟥 ÉCRANS LARGE (1441px à 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .carousel-images {
+    max-height: 550px;
+  }
+
+  .titre_carte {
+    font-size: 1.8rem;
+  }
+
+  .prix {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* 🟪 ÉCRANS ULTRA-LARGES (1921px et plus, 2K/4K) */
+@media (min-width: 1921px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .carousel-images {
+    max-height: 650px;
+  }
+
+  .titre_carte {
+    font-size: 2rem;
+  }
+
+  .prix {
+    font-size: 1.6rem;
+  }
+
+  .carousel-controls button {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+}
