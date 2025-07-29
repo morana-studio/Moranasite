@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Morana Studio - Professional services in design and architecture">
+    <meta name="author" content="Morana Studio">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+      <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Index Morana Studio</title>
+    
+    <style>
+        /* ==============================
+           CSS Corrigé - Responsive Design
+           ============================== */
+        
+        /* Variables CSS pour une meilleure maintenance */
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #2E7D32;
+            --yellow-color: #FFC107;
+            --pink-color: #E91E63;
+            --purple-color: #9C27B0;
+            --orange-color: #FF9800;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f9f9f9;
+        }
+
+        /* Reset et base */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation responsive */
+        .navbar {
+            padding: 1rem 0;
+            background-color: transparent !important;
+        }
+
+        .navbar-logo img {
+            max-height: 50px;
+            width: auto;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Conteneurs principaux */
+        .main-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-spacing {
+            padding: 2rem 0;
+        }
+
+        /* Lignes décoratives */
+        .line {
+            height: 2px;
+            background: linear-gradient(90deg, var(--yellow-color), var(--pink-color), var(--purple-color), var(--primary-color), var(--orange-color));
+            margin: 1rem 0;
+            border-radius: 1px;
+        }
+
+        .yellow-line, .green-line, .pink-line {
+            height: 3px;
+            width: 80px;
+            margin: 0 auto 2rem;
+            border-radius: 2px;
+        }
+
+        .yellow-line { background-color: var(--yellow-color); }
+        .green-line { background-color: var(--primary-color); }
+        .pink-line { background-color: var(--pink-color); }
+
+        /* Titres */
+        .titre {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .titre_carte_center,
+        .titre_carte_center-green,
+        .titre_carte_center-yellow,
+        .titre_carte_center-pink,
+        .titre_carte_center-purple,
+        .titre_carte_center-orange,
+        .titre_carte_center-green2 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .titre_carte_center-green, .titre_carte_center-green2 { color: var(--primary-color); }
+        .titre_carte_center-yellow { color: var(--yellow-color); }
+        .titre_carte_center-pink { color: var(--pink-color); }
+        .titre_carte_center-purple { color: var(--purple-color); }
+        .titre_carte_center-orange { color: var(--orange-color); }
+
+        /* Services section */
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .service-list li {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .service-list li:hover {
+            background-color: var(--bg-light);
+            transform: translateY(-2px);
+        }
+
+        .service-list a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Présentation */
+        .presentation {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .p-presentation,
+        .p-philo {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        /* Collaboration section */
+        .image-colab {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .p-colab {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+            color: var(--text-light);
+        }
+
+        /* Cartes de profil */
+        .profile-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .p-parag,
+        .p-green,
+        .p-yellow,
+        .p-pink,
+        .p-purple,
+        .p-orange {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        .page-footer {
+            background-color: #333;
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .logo-footer {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .no-bullets-footer {
+            list-style: none;
+            padding: 0;
+        }
+
+        .no-bullets-footer li {
+            margin: 0.5rem 0;
+        }
+
+        .no-bullets-footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .no-bullets-footer a:hover {
+            color: var(--primary-color);
+        }
+
+        .fa {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .fa:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-copyright {
+            border-top: 1px solid #555;
+            margin-top: 2rem;
+            padding-top: 1rem;
+        }
+
+        /* Media queries pour responsive */
+        @media (max-width: 768px) {
+            .titre {
+                font-size: 1.5rem;
+            }
+            
+            .titre_carte_center,
+            .titre_carte_center-green,
+            .titre_carte_center-yellow,
+            .titre_carte_center-pink,
+            .titre_carte_center-purple,
+            .titre_carte_center-orange,
+            .titre_carte_center-green2 {
+                font-size: 1.3rem;
+            }
+            
+            .presentation {
+                padding: 1rem 0.5rem;
+            }
+            
+            .profile-card {
+                padding: 1.5rem;
+            }
+            
+            .service-list a {
+                font-size: 1.1rem;
+            }
+            
+            .navbar-logo img {
+                max-height: 40px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .titre {
+                font-size: 1.3rem;
+            }
+            
+            .section-spacing {
+                padding: 1.5rem 0;
+            }
+            
+            .profile-card {
+                padding: 1rem;
+            }
+            
+            .p-presentation,
+            .p-philo {
+                font-size: 1rem;
+            }
+            
+            .main-container {
+                padding: 0 10px;
+            }
+        }
+
+        /* Styles spécifiques pour Samsung Galaxy XCover 5 et petits écrans */
+        @media screen and (max-width: 380px) and (min-width: 350px) {
+            body {
+                font-size: 14px;
+            }
+            
+            .navbar {
+                padding: 0.5rem 0;
+            }
+            
+            .navbar-logo img {
+                max-height: 35px;
+            }
+            
+            .titre {
+                font-size: 1.1rem;
+            }
+            
+            .service-list a {
+                font-size: 1rem;
+            }
+            
+            .profile-card {
+                padding: 0.8rem;
+                margin-bottom: 1rem;
+            }
+            
+            .section-spacing {
+                padding: 1rem 0;
+            }
+        }
+
+        /* Utilitaires */
+        .text-center { text-align: center; }
+        .mb-4 { margin-bottom: 1.5rem; }
+        .mt-4 { margin-top: 1.5rem; }
+        .hidden { display: none; }
+        
+        /* Animation fade-in */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="main-container">
+            <a class="navbar-brand navbar-logo" href="index.html">
+                <img src="MoranaStudio/image-svg/Logo-Morana-Studio-NavBar-Flex.svg" alt="Morana Studio Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Réalisation.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="Architecture_d'intrieur.html">Architecture d'intérieur</a>
+                            <a class="dropdown-item" href="brand_design.html">Identité de marque</a>
+                            <a class="dropdown-item" href="graphisme.html">Graphisme</a>
+                            <a class="dropdown-item" href="mobilier.html">Mobilier sur mesure</a>
+                            <a class="dropdown-item" href="web-designe.html">Web design</a>
+                            <a class="dropdown-item" href="Services.html">Détail services</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="line"></div>
+
+    <!-- Services Section -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="service-list">
+                        <li><a href="Architecture_d'intrieur.html">Architecture d'intérieur</a></li>
+                        <li><a href="brand_design.html">Identité de marque</a></li>
+                        <li><a href="graphisme.html">Graphisme</a></li>
+                        <li><a href="mobilier.html">Mobilier sur mesure</a></li>
+                        <li><a href="web-designe.html">Web design</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="presentation fade-in">
+                        <p class="p-presentation">
+                            Bienvenue chez Morana Studio, agence de design global qui vous accompagne tout le long du processus créatif. Du concept à la réalisation, nous donnons vie à des espaces et des identités qui vous ressemblent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Collaboration -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <h1 class="titre">Notre Collaboration</h1>
+            <div class="yellow-line"></div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img class="image-colab" src="photos/Mobilier/Kuleta/Kuleta1-1.jpg" alt="Collaboration Morana Studio">
+                </div>
+                <div class="col-md-8">
+                    <div class="profile-card">
+                        <p class="p-colab">
+                            Morana Studio naît de la rencontre de deux créatifs passionnés, Roman, Designer Global et Menuisier et Juana, Architecte DE et designer d'espace. Après une expérience professionnelle commune, nous avons décidé d'unir nos compétences et de mettre notre expertise et savoir-faire au service d'un objectif commun, créer des univers uniques pour des particuliers et des professionnels, en adéquation avec vos envies et vos visions, menant à un résultat de qualité, accompagné d'une expérience humaine de confiance, tout au long du projet.
+                        </p>
+                        <br>
+                        <p class="p-colab">
+                            Ce qui fait notre force, c'est la complémentarité de nos compétences. Deux points de vue, deux façons de penser qui nous permettent de transformer vos idées en projets inspirants. La créativité de l'une et l'expertise technique de l'autre s'allient pour vous offrir des solutions sur mesure où chaque détail est soigneusement pensé. Toujours à la recherche de nouvelles idées, inspirations et matériaux, nous concevons ensemble le projet qui reflète votre style et répond à vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About - Équipe -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4 class="titre_carte_center">Roman</h4>
+                    <h5 class="titre_carte_center">Designer global et menuisier</h5>
+                    <div class="profile-card">
+                        <p class="p-parag">
+                            Designer global diplômé de l'école Créapole et spécialisé dans le design de mobilier et design web. Mon parcours m'a offert l'opportunité de travailler dans différents domaines, allant de la création et installation des agencements sur mesure, au conseil et vente de produits en bois, en passant par le développement web. Cette expérience riche et variée m'a permis ainsi de développer ma capacité d'adaptation et ma créativité.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="titre_carte_center">Juana</h4>
+                    <h5 class="titre_carte_center">Architecte et designer</h5>
+                    <div class="profile-card">
+                        <p class="p-parag">
+                            Architecte et designer spécialiste en communication, marketing et gestion événementielle. Mon expérience professionnelle très variée en France et en Espagne m'a permis développer des solides compétences en gestion de projets et aménagement d'espaces, ainsi que la création des supports de communication et stratégie de marque, ce qui fait de moi un vrai couteau suisse qui saura trouver la solution qui mieux s'adapte à vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Philosophie -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <h1 class="titre">Notre philosophie</h1>
+            <div class="green-line"></div>
+            
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="presentation">
+                        <p class="p-philo">
+                            Notre ambition c'est de mettre notre expertise au service de projets inspirants et révéler tout leur potentiel. Nous allions sensibilité artistique, stratégie visuelle et expertise technique pour transformer des idées en concepts innovants toujours en cohérence avec nos valeurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-green">Adaptabilité</h4>
+                    <div class="profile-card">
+                        <p class="p-green">
+                            Nous nous adaptons à tout type de demande pour concevoir un projet sur-mesure et à votre image. Notre expérience dans plusieurs champs nous permet de trouver la solution qui mieux s'adapte à votre projet.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-green">Professionnalisme</h4>
+                    <div class="profile-card">
+                        <p class="p-green">
+                            Nous mettons un point d'honneur à allier expertise, rigueur et engagement dans chaque projet. Notre approche structurée et notre savoir-faire, et celui de nos collaborateurs, garantissent des solutions adaptées, durables et à la hauteur de vos attentes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-green">Transparence</h4>
+                    <div class="profile-card">
+                        <p class="p-green">
+                            Nous croyons en une collaboration sincère et fluide, où chaque étape du projet est partagée en toute clarté. De la conception à la réalisation, nous échangeons avec vous, en veillant à une communication ouverte et à des choix éclairés. Cette transparence est la clé d'une relation de confiance et d'un projet abouti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processus Créatif -->
+    <section class="section-spacing">
+        <div class="main-container">
+            <h1 class="titre">Notre processus créatif</h1>
+            <div class="pink-line"></div>
+            
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="presentation">
+                        <p class="p-philo">
+                            Nous adoptons une approche globale et structurée pour donner vie à des projets uniques et innovants. Chaque étape est pensée pour garantir une conception harmonieuse et adaptée à vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-yellow">Découverte</h4>
+                    <div class="profile-card">
+                        <p class="p-yellow">
+                            Nous échangeons sur votre projet afin de comprendre vos attentes, vos contraintes et votre vision.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-pink">Conception</h4>
+                    <div class="profile-card">
+                        <p class="p-pink">
+                            Nous traduisons les idées en concepts concrets à travers des plans, des modélisations 3D, des dessins ou des maquettes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="titre_carte_center-purple">Livraison</h4>
+                    <div class="profile-card">
+                        <p class="p-purple">
+                            Nous finalisons et livrons le projet avec une attention particulière aux détails et restons à votre disposition pour garantir la pérennité de la solution mise en place.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line mt-4 mb-4"></div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4 class="titre_carte_center-green2">Recherche</h4>
+                    <div class="profile-card">
+                        <p class="p-green">
+                            Nous explorons différentes pistes créatives en nous appuyant sur les tendances et références pour vous proposer des solutions innovantes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="titre_carte_center-orange">Réalisation</h4>
+                    <div class="profile-card">
+                        <p class="p-orange">
+                            Nous explorons différentes pistes créatives en nous appuyant sur les tendances et références pour vous proposer des solutions innovantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="presentation">
+                        <p class="p-philo">
+                            Cette méthodologie nous permet de créer des solutions uniques, fonctionnelles et esthétiques, adaptées à chaque client en étant le seul interlocuteur tout le long du projet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img class="logo-footer" src="MoranaStudio/image-svg/logo_moranastudio_withe.svg" alt="Morana Studio Logo">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <ul class="no-bullets-footer">
+                        <li><strong>Mentions légales</strong></li>
+                        <li><a href="mention-légal.html">Mentions légales</a></li>
+                        <li><a href="condition-de-service.html">Conditions de service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <ul class="no-bullets-footer">
+                        <li><strong>Nous suivre:</strong></li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/morana-studio/about/?viewAsMember=true"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://fr.pinterest.com/moranastudiodesign/"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://www.instagram.com/morana__studio"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright text-center">
+            <a href="https://github.com/morana"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="footer-copyright text-center">
+            © 2025 Morana studio, tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Détection mobile améliorée
+        function detectDevice() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const ratio = window.devicePixelRatio || 1;
+            const ua = navigator.userAgent || "";
+
+            // Détection mobile générale
+            const isMobile = width <= 768 || /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(ua);
+            
+            // Détection Samsung Galaxy XCover 5
+            const isXCover5 = ua.includes("SM-G525") || 
+                             (width >= 350 && width <= 380 && ratio >= 2 && ratio <= 3.5);
+
+            if (isMobile) {
+                document.body.classList.add("mobile-view");
+                console.log("📱 Appareil mobile détecté");
+            }
+
+            if (isXCover5) {
+                document.body.classList.add("xcover5");
+                console.log("📱 Samsung Galaxy XCover 5 détecté");
+            }
+
+            // Animation fade-in pour les éléments
+            const elements = document.querySelectorAll('.profile-card, .presentation');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('fade-in');
+                }, index * 100);
+            });
+        }
+
+        // Lancement des détections
+        document.addEventListener('DOMContentLoaded', detectDevice);
+        window.addEventListener('resize', detectDevice);
+        window.addEventListener('orientationchange', detectDevice);
+    </script>
+</body>
+</html>
