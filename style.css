@@ -784,14 +784,14 @@ padding-left: 10%;
       text-align: justify;
 }
 .p-colab{
-    margin-top: none;
+    margin-top: 5px;
     display: flex;
     font-family: 'Quicksand',sans-serif;
     font-weight: 400;
     color: white;
-    padding-top: none;
-    padding-left:none;
-    padding-right: none;
+    padding-top: 1%;
+    padding-left:1em;
+    padding-right: 1em;
       text-align:justify;
     text-align-last: left;
 }
@@ -1196,12 +1196,7 @@ input[type=submit]:hover {
 
 
 
-.titre_carte{
-    text-align: center;
-    font-family: 'Quicksand',sans-serif;
-    color: white;
-  
-}
+
 .titre_carte_center{
     font-family: 'Quicksand',sans-serif;
     color: white;
