@@ -310,42 +310,48 @@ input[type=submit]:hover {
     color: white;
     font: ;
     text-align: center;
-    padding-left: none;
+      padding-left: 1em;
+    padding-right: 1em;
 }
 .titre_carte_center-yellow{
     font-family: 'SUPREME LL',sans-serif;
     color: #F9ED66;
     font: ;
     text-align: center;
-    padding-left: none;
+      padding-left: 1em;
+    padding-right: 1em;
 }
 .titre_carte_center-green{
     font-family: 'SUPREME LL',sans-serif;
     color: #A1B319;
     font: ;
     text-align: center;
-    padding-left: none;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .titre_carte_center-pink{
     font-family: 'SUPREME LL',sans-serif;
     color: #CF4C84;
     font: ;
     text-align: center;
-    padding-left: none;
+      padding-left: 1em;
+    padding-right: 1em;
 }
 .titre_carte_center-orange{
     font-family: 'SUPREME LL',sans-serif;
     color: #F48352;
     font: ;
     text-align: center;
-    padding-left: none;
+      padding-left: 1em;
+    padding-right: 1em;
 }
 .titre_carte_center-purple{
     font-family: 'SUPREME LL',sans-serif;
     color: #9A94C7;
     font: ;
     text-align: center;
-    padding-left: none;
+      padding-left: 1em;
+    padding-right: 1em;
 }
 #box_a{    
      background-image: linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
