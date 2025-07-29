@@ -747,6 +747,9 @@ padding-left: 10%;
 }
 .p_carte{
     padding: 3%;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .p-center{
    display: flex;
