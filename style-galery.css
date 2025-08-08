@@ -39,20 +39,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajustement pour les petits écrans */
-  }
-
-  .vertical img {
-    height: 250px; /* Réduit la hauteur des images verticales sur petits écrans */
-  }
-
-  .horizontal img {
-    height: 150px; /* Réduit la hauteur des images horizontales sur petits écrans */
-  }
-}
-
 /* Styles pour le modal */
 .modal {
   display: none; /* Masqué par défaut */
@@ -100,53 +86,17 @@
   font-size: 0px;
 }
 
-/* Section responsive pour les petits écrans */
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  #box_b .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-
-  #box_b .vertical img {
-    height: 250px;
-  }
-
-  #box_b .horizontal img {
-    height: 150px;
-  }
+.git-real{
+    padding-left: 44%;
+    padding-right: 49%;
+    align-items: center;
+    
 }
-
-
-/* Général */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 .service-list {
   list-style-type: none;
   padding: 0;
 }
 
-/*.padding-service {
-  cursor: pointer;
-  padding: 10px;
-  background-color: #f0f0f0;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: background-color 0.3s;
-}
-
-.padding-service:hover {
-  background-color: #ddd;
-}*/
 
 /* Sections */
 .service-section {

@@ -1,4 +1,11 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .container {
     display: flex;
     flex-direction: column; /* Les éléments seront empilés verticalement */
@@ -759,12 +766,15 @@ padding-left: 10%;
     text-align-last: center;
 }
 .p-green{
-     margin-top: none;
+    font-size: 18px;
+    display: flex
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+     margin-top: 5px;
     display: flex;
     font-family: 'Quicksand',sans-serif;
     color:#A1B319 ;
-    padding-left:1em;
-    padding-right: 1em;
     text-align: justify;
     text-align-last: center;
     padding: 3%;
@@ -889,6 +899,7 @@ padding-left: 10%;
     
 }
 .footer-copyright text-center py-3{
+    margin: 
     color: white;
 }
 
@@ -1147,7 +1158,10 @@ input[type=submit]:hover {
 }
 
 
-
+.center-carte{
+    padding-left: ;
+    padding-right: ;
+}
 
 .titre_carte_center{
     font-family: 'Quicksand',sans-serif;
@@ -1162,7 +1176,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
     padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
     
 }
 .titre_carte_center-green{
@@ -1171,7 +1185,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
      padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
     
 }
 .titre_carte_center-green2{
@@ -1180,7 +1194,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
      padding-left: 1em;
-    padding-right: 2em;  
+    padding-right: 1em;  
 }
 .titre_carte_center-pink{
     font-family: 'Quicksand',sans-serif;
@@ -1188,7 +1202,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
      padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 .titre_carte_center-orange{
     font-family: 'Quicksand',sans-serif;
@@ -1196,7 +1210,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
    padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 .titre_carte_center-purple{
     font-family: 'Quicksand',sans-serif;
@@ -1204,7 +1218,7 @@ input[type=submit]:hover {
     font: ;
     text-align: center;
      padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 #box_a{    
      background-image: linear-gradient(to bottom right,#F9ED66,#A1B319,#CF4F84, #F48352,#9A94C7);
@@ -1243,6 +1257,12 @@ input[type=submit]:hover {
     padding-left: 20px;
     font-size: 15px;
 }
+.git-real{
+    
+    padding-left: 44%;
+    padding-right: 44%;
+}
+
 .no-bullets-footer{
 
     font: none;
@@ -1480,9 +1500,6 @@ a-link {
 
 
 
-.footer-copyright text-center py-3{
-    color: white;
-}
 
 /* Conteneur pour centrer le bouton */
 .container {
